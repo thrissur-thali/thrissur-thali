@@ -1,15 +1,21 @@
 // script.js
 
 async function fetchData() {
-    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv?t=' + Date.now(); // Add cache-busting parameter
+    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv';
 
     try {
+        console.log('Fetching CSV from:', csvUrl); // Debug: Log the URL
         const response = await fetch(csvUrl);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const csvText = await response.text();
-        console.log('CSV Text:', csvText);
+        console.log('CSV Text:', csvText); // Debug: Log the raw CSV data
 
         const parsedData = Papa.parse(csvText, { header: true }).data;
-        console.log('Parsed Data:', parsedData);
+        console.log('Parsed Data:', parsedData); // Debug: Log the parsed data
 
         const tableBody = document.getElementById('table-body');
         tableBody.innerHTML = '';
