@@ -1,7 +1,7 @@
 // script.js
 
 async function fetchData() {
-    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv';
+    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv?t=' + Date.now();
 
     try {
         console.log('Fetching CSV from:', csvUrl); // Debug: Log the URL
