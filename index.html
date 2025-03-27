@@ -1,6 +1,8 @@
 <head>
   <link rel="stylesheet" href="thrissur_thali.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -9,18 +11,31 @@
 </head>
 
 <body>
-  <hr>
-  <p class="hook">Hygienic, home-made, and yummy dinner!</p>
-  <table border="1">
-    <thead>
-        <tr>
-            <th>Number</th>
-            <th>Item</th>
-            <th>Rate</th>
-        </tr>
-    </thead>
+  <div class="banner">
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+    <span>thrissur thali</span>
+  </div>
+
+  <p id="currentDate" class="date"></p>
+
+ <div class="container"> 
+  <table border="1" class="menutable">
+      <thead>
+          <tr>
+              <th>Item</th>
+              <th>Rate</th>
+          </tr>
+      </thead>
     <tbody id="table-body">
-        <!-- Rows will be populated here by JavaScript -->
     </tbody>
-</table>
+  </table>
+</div>  
+
+<hr padding-top="50px">
+
 </body>
