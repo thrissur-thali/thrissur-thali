@@ -1,21 +1,17 @@
-// script.js
+const date = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById("currentDate").textContent = date.toLocaleDateString('en-US', options);
 
 async function fetchData() {
-    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv?t=' + Date.now();
+    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/refs/heads/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv' + Date.now(); // Add cache-busting parameter
 
     try {
-        console.log('Fetching CSV from:', csvUrl); // Debug: Log the URL
         const response = await fetch(csvUrl);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
         const csvText = await response.text();
-        console.log('CSV Text:', csvText); // Debug: Log the raw CSV data
+        console.log('CSV Text:', csvText);
 
         const parsedData = Papa.parse(csvText, { header: true }).data;
-        console.log('Parsed Data:', parsedData); // Debug: Log the parsed data
+        console.log('Parsed Data:', parsedData);
 
         const tableBody = document.getElementById('table-body');
         tableBody.innerHTML = '';
@@ -34,8 +30,6 @@ async function fetchData() {
     }
 }
 
-// Fetch data when the page loads
 window.onload = fetchData;
 
-// Optionally, refresh the data periodically (e.g., every 5 minutes)
-setInterval(fetchData, 5 * 60 * 1000); // Refresh every 5 minutes
+setInterval(fetchData, 5 * 60 * 1000);
