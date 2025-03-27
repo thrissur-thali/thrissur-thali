@@ -3,7 +3,7 @@ const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric
 document.getElementById("currentDate").textContent = date.toLocaleDateString('en-US', options);
 
 async function fetchData() {
-    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/refs/heads/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv' + Date.now(); // Add cache-busting parameter
+    const csvUrl = 'https://raw.githubusercontent.com/thrissur-thali/thrissur-thali/refs/heads/main/Thrissur%20Thali%20Menu%20-%20Sheet1.csv?t=' + Date.now(); // Add cache-busting parameter
 
     try {
         const response = await fetch(csvUrl);
