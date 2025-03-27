@@ -10,7 +10,7 @@ async function fetchData() {
         const csvText = await response.text();
         console.log('CSV Text:', csvText);
 
-        const parsedData = Papa.parse(csvText, { header: true }).data;
+        const parsedData = Papa.parse(csvText, { header: true }).data.filter(row => Object.values(row).some(value => value.trim() !== ""));
         console.log('Parsed Data:', parsedData);
 
         const tableBody = document.getElementById('table-body');
