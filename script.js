@@ -32,4 +32,4 @@ async function fetchData() {
 
 window.onload = fetchData;
 
-setInterval(fetchData, 5 * 60 * 1000);
+//setInterval(fetchData, 5 * 60 * 1000);
