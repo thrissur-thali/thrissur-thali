@@ -18,6 +18,7 @@ async function fetchData() {
 
         parsedData.forEach(row => {
             const tr = document.createElement('tr');
+            console.log("Arpitha");
             Object.values(row).forEach(cell => {
                 const td = document.createElement('td');
                 td.textContent = cell;
