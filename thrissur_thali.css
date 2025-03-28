@@ -58,3 +58,84 @@ td, th {
   font-size: 25pt;
   word-break: break-word;
 }
+
+.order {
+  width:800px;
+  height:400px;
+  background-color:transparent;
+  border:2px solid white;
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+}
+
+.ordernow {
+  color:white;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight:bold;
+  font-size:60pt;
+  text-align:center;
+  line-height:0.2;
+}
+
+.ordercontainer {
+  display:flex;
+  justify-content:center;
+}
+
+.ordertext {
+  color:white;
+  font-family:'Instrument Sans', sans-serif;
+  font-weight:normal;
+  font-size:30pt;
+  text-align:center;
+  line-height:0.5;
+}
+
+.pickupcontainer {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.pickup {
+  color:white;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight:bold;
+  font-size:40pt;
+  text-align:center;
+  line-height:0.2;
+}
+
+.pickuptext {
+  color:white;
+  font-family:'Instrument Sans', sans-serif;
+  font-weight:normal;
+  font-size:20pt;
+  text-align:center;
+  line-height:0.5;
+}
+
+.querycontainer {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.query {
+  color:white;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight:bold;
+  font-size:35pt;
+  text-align:center;
+  line-height:0.2;
+}
+
+.queryno {
+  color:white;
+  font-family:'Instrument Sans', sans-serif;
+  font-weight:normal;
+  font-size:18pt;
+  text-align:center;
+  line-height:0.5;
+}
