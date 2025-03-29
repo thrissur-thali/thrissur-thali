@@ -149,4 +149,14 @@ td, th {
   text-align:center;
   line-height:1;
   }
+
+  .banner span {
+    display:none;
+  }
+
+  .banner span:nth-child(1) {
+    display:inline;
+    opacity:1;
+    font-weight:normal;
+  }
 }
