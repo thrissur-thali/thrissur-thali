@@ -140,6 +140,10 @@ td, th {
   line-height:0.5;
 }
 
+a {
+  color:white;
+}
+
 @media (max-width: 768px) {
   .pickuptext {
     color:white;
@@ -158,5 +162,24 @@ td, th {
     display:inline;
     opacity:1;
     font-weight:normal;
+  }
+
+  .ordernow {
+    color:white;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight:bold;
+  font-size:60pt;
+  text-align:center;
+  line-height:1;
+  }
+
+  .menutable {
+  border-color:white;
+  align-items:center;
+  text-align:center;
+  border-collapse:collapse;
+  -webkit-text-fill-color: white;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 10pt;
   }
 }
