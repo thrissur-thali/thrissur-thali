@@ -182,4 +182,14 @@ a {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 10pt;
   }
+
+  .order {
+  width:800px;
+  height:600px;
+  background-color:transparent;
+  border:2px solid white;
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  }
 }
