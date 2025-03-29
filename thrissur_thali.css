@@ -139,3 +139,14 @@ td, th {
   text-align:center;
   line-height:0.5;
 }
+
+@media (max-width: 768px) {
+  .pickuptext {
+    color:white;
+  font-family:'Instrument Sans', sans-serif;
+  font-weight:normal;
+  font-size:20pt;
+  text-align:center;
+  line-height:1;
+  }
+}
