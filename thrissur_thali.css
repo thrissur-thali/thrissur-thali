@@ -196,7 +196,6 @@ a {
   td, th {
   border: 2px solid white;
   padding: 15px 30px;
-  font-size: 15pt;
-  word-break: break-word;
+  font-size: 10pt;
   }
 }
